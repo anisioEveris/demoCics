@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>br.com.viavarejo</groupId>
 			<artifactId>vv-integracao-cics</artifactId>
-			<version>1.0.4.2</version>
+			<version>1.0.4.3</version>
 			<exclusions>
 				<exclusion>
 					<groupId>log4j</groupId>

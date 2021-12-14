@@ -7,7 +7,7 @@ spring:
     name: teste-cics
 
 cics:
-  host: xxxxx
+  host: 10.234.30.1
   porta: 2006
   protocolo: tcp
   serverName: CICSHML
