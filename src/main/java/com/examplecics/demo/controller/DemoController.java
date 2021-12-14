@@ -6,6 +6,7 @@ import com.examplecics.demo.config.ConfigCics;
 import com.examplecics.demo.dto.CancelamentoSTDEntradaDTO;
 import com.examplecics.demo.dto.CancelamentoSTdSaida;
 import com.examplecics.demo.dto.ResponseDTO;
+import com.examplecics.demo.dto.TransferenciaCargaEntradaDto;
 import com.examplecics.demo.exception.FailedException;
 import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +26,20 @@ public class DemoController {
     @GetMapping("/teste")
     public ResponseEntity<?> execCancelarSTD(){
         var response = new ResponseDTO();
+        
+        TransferenciaCargaEntradaDto transferenciaCargaEntradaDto = new TransferenciaCargaEntradaDto();
+		transferenciaCargaEntradaDto.setSolicitacao("D");
+		transferenciaCargaEntradaDto.setOperacao("T");
+		transferenciaCargaEntradaDto.setMotivo(222);
+		transferenciaCargaEntradaDto.setCargaOrigem(44);
+		transferenciaCargaEntradaDto.setCargaDestino(55);		
+		transferenciaCargaEntradaDto.setStatusDocumento("std");
+		transferenciaCargaEntradaDto.setDocumento(66);
+		transferenciaCargaEntradaDto.setComplementoDocumento(77);
+		transferenciaCargaEntradaDto.setEmpresaFuncionario(333);
+		transferenciaCargaEntradaDto.setCodigoFuncionario(111);
+        
+        
 
         CancelamentoSTDEntradaDTO entrada = CancelamentoSTDEntradaDTO.builder()
                 .codigoEmpresaGrupoCasasBahia(21)

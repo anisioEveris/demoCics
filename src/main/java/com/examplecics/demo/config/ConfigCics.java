@@ -4,9 +4,11 @@ import br.com.viavarejo.cics.config.ConfigCicsI;
 import br.com.viavarejo.cics.dto.DTOCicsI;
 import br.com.viavarejo.cics.enumerator.EnumClasseSegurancaServico;
 import com.examplecics.demo.dto.CancelamentoSTdSaida;
+import com.examplecics.demo.dto.TransferenciaCargaSaidaDto;
 
 public enum ConfigCics implements ConfigCicsI {
 
+	TRANSFERENCIA_CARGA("S9N0301", TransferenciaCargaSaidaDto.class, "S9N0301@SAIDA", "O", "01", 10, "S9GO"),
     CANCELAR_STD("S8I0216", CancelamentoSTdSaida.class, "S8I0216@SAIDA", "O", "01", 10, "S8E9");
 
     private String programa;

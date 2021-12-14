@@ -11,3 +11,8 @@ cics:
   porta: 2006
   protocolo: tcp
   serverName: CICSHML
+
+  
+#host da alta (programa do antonio)
+#  https://homologacaosistemas.casasbahia.com.br/JavaCTGCics/CicsServlet
+#  10.0.10.129 
