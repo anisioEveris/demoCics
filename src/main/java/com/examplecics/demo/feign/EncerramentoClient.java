@@ -1,5 +1,6 @@
 package com.examplecics.demo.feign;
 
+
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

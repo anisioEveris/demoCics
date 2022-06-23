@@ -17,8 +17,8 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 50000
+        readTimeout: 50000
         loggerLevel: basic
 #host da alta (programa do antonio)
 #  https://homologacaosistemas.casasbahia.com.br/JavaCTGCics/CicsServlet
